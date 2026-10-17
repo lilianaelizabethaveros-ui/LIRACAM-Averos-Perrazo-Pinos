@@ -73,13 +73,11 @@ LIRACAM/
 ├── estilos.css             # Estilos CSS globales de la página (layout, tipografía y variables)
 ├── README.md               # Documentación general, arquitectura y guía de trabajo del equipo
 ├── img/                    # Recursos gráficos, logotipos e imágenes de productos del emprendimiento
-│   ├── guayusa.jpg         # Imagen real del producto (Rashell Pinos)
-│   ├── producto-1.svg      # Gráfico referencial inicial
-│   ├── producto-2.svg      # Gráfico referencial inicial
-│   └── producto-3.svg      # Gráfico referencial inicial
+│   ├── guayusa.jpg         # Imagen del producto de Rashell Pinos (Infusión fría de Guayusa Orgánica)
+│   └── tostado-andino.jpeg # Imagen del producto de Liliana Averos (Tostado Andino Crujiente)
 └── componentes/            # Directorio donde residen los Web Components modulares del equipo
-    ├── .gitkeep            # Archivo de control para Git
-    └── tarjeta-producto-rashell-pinos.js  # Componente individual de producto (Rashell Pinos)
+    ├── tarjeta-producto-lili.js          # Componente individual de producto (Liliana Averos)
+    └── tarjeta-producto-rashell-pinos.js # Componente individual de producto (Rashell Pinos)
 ```
 
 ---
@@ -123,9 +121,9 @@ main  (Versión estable y entregas oficiales)
 
 | Integrante | Rol y asignación en el proyecto | Estado |
 |---|---|---|
-| Averos Fonseca Liliana Elizabeth (@lilianaelizabethaveros-ui) | Preparación de la base inicial del proyecto (estructura de archivos, arquitectura base y documentación). Desarrollo de su componente individual en su rama de trabajo. | Base inicial completada |
+| Averos Fonseca Liliana Elizabeth (@lilianaelizabethaveros-ui) | Preparación de la base inicial del proyecto (estructura de archivos, arquitectura base y documentación). Desarrollo e integración de su componente individual. | Base inicial y componente completados |
 | Perrazo Guerra Camila Mayte (@CamilaPerrazo) | Desarrollo y verificación de su componente individual de producto en su respectiva rama de trabajo. | Pendiente de desarrollo en rama |
-| Pinos Cordero Rashell Estefany (@rashellpinos) | Desarrollo y verificación de su componente individual de producto en su respectiva rama de trabajo. | Componente implementado en rama `feature/rashell-pinos`; pendiente de validación visual e integración grupal |
+| Pinos Cordero Rashell Estefany (@rashellpinos) | Desarrollo y verificación de su componente individual de producto en su respectiva rama de trabajo. | Componente implementado y verificado en rama `feature/rashell-pinos` |
 
 ---
 
@@ -143,6 +141,6 @@ Esta sección permite realizar el seguimiento técnico del desarrollo e integrac
 
 | Integrante | Producto o componente | Archivo JavaScript | Rama de trabajo | Estado |
 |---|---|---|---|---|
-| Averos Fonseca Liliana Elizabeth (@lilianaelizabethaveros-ui) | *Pendiente de confirmación* | *Pendiente de confirmación* | *Pendiente de confirmación* | Pendiente de desarrollo en rama |
+| Averos Fonseca Liliana Elizabeth (@lilianaelizabethaveros-ui) | Tostado Andino Crujiente con Sal Marina y Hierbas | `componentes/tarjeta-producto-lili.js` | `main` | Implementado e integrado en catálogo |
 | Perrazo Guerra Camila Mayte (@CamilaPerrazo) | *Pendiente de confirmación* | *Pendiente de confirmación* | *Pendiente de confirmación* | Pendiente de desarrollo en rama |
-| Pinos Cordero Rashell Estefany (@rashellpinos) | Infusión fría de Guayusa Orgánica con Limón | `componentes/tarjeta-producto-rashell-pinos.js` | `feature/rashell-pinos` | Implementado en su rama individual; pendiente de validación visual e integración grupal |
+| Pinos Cordero Rashell Estefany (@rashellpinos) | Infusión fría de Guayusa Orgánica con Limón | `componentes/tarjeta-producto-rashell-pinos.js` | `feature/rashell-pinos` | Implementado y verificado en rama individual |
