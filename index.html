@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LIRACAM · Base Inicial del Proyecto</title>
   <link rel="stylesheet" href="./estilos.css">
+  <!-- Carga modular del componente web nativo desarrollado por Liliana Averos -->
+  <script type="module" src="./componentes/tarjeta-producto-lili.js"></script>
 </head>
 <body>
 
@@ -13,20 +15,26 @@
     <h1>LIRACAM</h1>
     <p class="cabecera-subtitulo">Proyecto Base · Web Components Nativos</p>
     <p class="cabecera-descripcion">
-      Estructura inicial para el desarrollo colaborativo de componentes web de la práctica de laboratorio.
+      Estructura colaborativa para el desarrollo de componentes web nativos de la práctica de laboratorio.
     </p>
   </header>
 
   <!-- Contenedor principal de la base inicial -->
   <main class="contenedor-principal">
 
-    <section class="tarjeta-informativa">
-      <h2>Catálogo de Productos (En preparación)</h2>
-      <p>
-        El catálogo y los componentes de producto se desarrollarán en sus respectivas ramas individuales
-        y se integrarán aquí una vez revisados y verificados.
-      </p>
+    <h2 class="seccion-titulo">Catálogo de Productos · LIRACAM</h2>
+
+    <section class="catalogo">
+
+      <!-- TARJETA 1 - Producto TOSTADO ANDINO CRUJIENTE de Liliana Averos -->
+      <tarjeta-producto precio="1.75">
+        <img slot="foto" src="./img/tostado-andino.jpeg" alt="Tostado Andino Crujiente con Sal Marina y Hierbas">
+        <h3 slot="nombre">Tostado Andino Crujiente con Sal Marina y Hierbas</h3>
+        <p>Maíz tostado tradicional de la serranía ecuatoriana, sazonado con sal marina y hierbas aromáticas finas. Snack 100% natural, crocante y nutritivo.</p>
+      </tarjeta-producto>
+
     </section>
+    
   </main>
 
   <!-- Pie de página -->
