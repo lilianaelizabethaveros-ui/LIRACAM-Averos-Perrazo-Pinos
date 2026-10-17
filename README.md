@@ -5,7 +5,7 @@ Programación Integrativa de Componentes Web · Unidad 1: Web Components
 | Dato | Detalle |
 |---|---|
 | Emprendimiento | LIRACAM |
-| Integrantes del equipo | Averos Fonseca Liliana Elizabeth<br>Perrazo Guerra Camila Mayte<br>Pinos Cordero Rashell Estefany |
+| Integrantes del equipo | Averos Fonseca Liliana Elizabeth (@lilianaelizabethaveros-ui)<br>Perrazo Guerra Camila Mayte (@CamilaPerrazo)<br>Pinos Cordero Rashell Estefany (@rashellpinos) |
 | Asignatura | Programación Integrativa de Componentes Web |
 | Unidad | Unidad 1: Web Components |
 | NRC | 36642 |
@@ -113,7 +113,7 @@ main  (Versión estable y entregas oficiales)
 3. **Ramas individuales:** Ramas creadas a partir de `develop` para que cada integrante trabaje de manera independiente en su componente sin interferir con el resto.
 4. **Revisión y merge:** Cada integrante prueba su componente localmente. Tras la revisión y aprobación del equipo, se realiza el *merge* hacia `develop`. Una vez verificado el catálogo completo, se realiza el *merge* hacia `main`.
 
-> *Nota:* Las ramas `develop` y las ramas personales se crearán una vez aprobada y publicada la base inicial en GitHub.
+> *Nota:* La rama `develop` ya se encuentra publicada en el repositorio remoto. Las ramas individuales se crearán a partir de `develop` cuando cada integrante inicie el desarrollo de su componente.
 
 ---
 
@@ -121,9 +121,9 @@ main  (Versión estable y entregas oficiales)
 
 | Integrante | Rol y asignación en el proyecto | Estado |
 |---|---|---|
-| Averos Fonseca Liliana Elizabeth | Preparación de la base inicial del proyecto (estructura de archivos, arquitectura base y documentación). Desarrollo de su componente individual en su rama de trabajo. | Base inicial completada |
-| Perrazo Guerra Camila Mayte | Desarrollo y verificación de su componente individual de producto en su respectiva rama de trabajo. | Pendiente de desarrollo en rama |
-| Pinos Cordero Rashell Estefany | Desarrollo y verificación de su componente individual de producto en su respectiva rama de trabajo. | Pendiente de desarrollo en rama |
+| Averos Fonseca Liliana Elizabeth (@lilianaelizabethaveros-ui) | Preparación de la base inicial del proyecto (estructura de archivos, arquitectura base y documentación). Desarrollo de su componente individual en su rama de trabajo. | Base inicial completada |
+| Perrazo Guerra Camila Mayte (@CamilaPerrazo) | Desarrollo y verificación de su componente individual de producto en su respectiva rama de trabajo. | Pendiente de desarrollo en rama |
+| Pinos Cordero Rashell Estefany (@rashellpinos) | Desarrollo y verificación de su componente individual de producto en su respectiva rama de trabajo. | Pendiente de desarrollo en rama |
 
 ---
 
