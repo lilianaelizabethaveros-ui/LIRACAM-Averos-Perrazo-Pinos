@@ -4,9 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LIRACAM · Base Inicial del Proyecto</title>
+  <link rel="icon" href="data:,">
   <link rel="stylesheet" href="./estilos.css">
   <!-- Carga modular del componente web nativo desarrollado por Liliana Averos -->
   <script type="module" src="./componentes/tarjeta-producto-lili.js"></script>
+  <!-- Carga modular del componente web nativo desarrollado por Rashell Pinos -->
+  <script type="module" src="./componentes/tarjeta-producto-rashell-pinos.js"></script>
 </head>
 <body>
 
@@ -33,8 +36,15 @@
         <p>Maíz tostado tradicional de la serranía ecuatoriana, sazonado con sal marina y hierbas aromáticas finas. Snack 100% natural, crocante y nutritivo.</p>
       </tarjeta-producto>
 
+      <!-- TARJETA 2 - Producto Infusión fría de Guayusa Orgánica con Limón de Rashell Pinos -->
+      <tarjeta-producto precio="2.00" destacado>
+        <img slot="foto" src="./img/guayusa.jpg" alt="Infusión fría de Guayusa Orgánica con Limón">
+        <h3 slot="nombre">Infusión fría de Guayusa Orgánica con Limón</h3>
+        <p>La guayusa es una bebida ancestral ecuatoriana muy comercializada en tiendas saludables de Quito por sus propiedades energizantes naturales.</p>
+      </tarjeta-producto>
+
     </section>
-    
+
   </main>
 
   <!-- Pie de página -->

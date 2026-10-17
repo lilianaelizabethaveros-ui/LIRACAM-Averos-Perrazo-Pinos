@@ -238,4 +238,6 @@ class TarjetaProducto extends HTMLElement {
 }
 
 // Registro del Custom Element en el navegador
-customElements.define("tarjeta-producto", TarjetaProducto);
+if (!customElements.get("tarjeta-producto")) {
+    customElements.define("tarjeta-producto", TarjetaProducto);
+}

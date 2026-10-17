@@ -158,6 +158,8 @@ tarjeta-producto {
   --color-borde-tarjeta: var(--color-borde, #DDE5DF);
   --color-btn-hover: #235335;
   border-color: var(--color-borde, #DDE5DF) !important;
+  min-width: 0;
+  max-width: 100%;
 }
 
 /* Estilo para la tarjeta en estado destacado */

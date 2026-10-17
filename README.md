@@ -73,11 +73,11 @@ LIRACAM/
 ├── estilos.css             # Estilos CSS globales de la página (layout, tipografía y variables)
 ├── README.md               # Documentación general, arquitectura y guía de trabajo del equipo
 ├── img/                    # Recursos gráficos, logotipos e imágenes de productos del emprendimiento
-│   ├── producto-1.svg      # Gráfico referencial inicial
-│   ├── producto-2.svg      # Gráfico referencial inicial
-│   └── producto-3.svg      # Gráfico referencial inicial
-└── componentes/            # Directorio donde residirá el Web Component modular de cada integrante
-    └── .gitkeep            # Archivo de control para Git
+│   ├── guayusa.jpg         # Imagen del producto de Rashell Pinos (Infusión fría de Guayusa Orgánica)
+│   └── tostado-andino.jpeg # Imagen del producto de Liliana Averos (Tostado Andino Crujiente)
+└── componentes/            # Directorio donde residen los Web Components modulares del equipo
+    ├── tarjeta-producto-lili.js          # Componente individual de producto (Liliana Averos)
+    └── tarjeta-producto-rashell-pinos.js # Componente individual de producto (Rashell Pinos)
 ```
 
 ---
@@ -103,14 +103,14 @@ El equipo implementará el flujo de ramas acordado en clase:
 ```text
 main  (Versión estable y entregas oficiales)
   └── develop  (Rama de integración del equipo)
-        ├── rama-liliana-averos   (Componente individual 1)
-        ├── rama-camila-perrazo   (Componente individual 2)
-        └── rama-rashell-pinos    (Componente individual 3)
+        ├── feature/rashell-pinos                 (Componente individual · Rashell Pinos)
+        ├── [Rama individual por definir]         (Liliana Averos)
+        └── [Rama individual por definir]         (Camila Perrazo)
 ```
 
 1. **Rama `main`:** Contiene exclusivamente las versiones estables y aprobadas del proyecto.
 2. **Rama `develop`:** Rama de integración creada a partir de `main`. En ella se integrarán y probarán conjuntamente los componentes desarrollados por las tres integrantes.
-3. **Ramas individuales:** Ramas creadas a partir de `develop` para que cada integrante trabaje de manera independiente en su componente sin interferir con el resto.
+3. **Ramas individuales:** Ramas creadas a partir de `develop` para que cada integrante trabaje de manera independiente en su componente sin interferir con el resto (por ejemplo, `feature/rashell-pinos` para Rashell Pinos; las demás ramas individuales se crearán cuando cada integrante inicie el desarrollo de su respectivo componente).
 4. **Revisión y merge:** Cada integrante prueba su componente localmente. Tras la revisión y aprobación del equipo, se realiza el *merge* hacia `develop`. Una vez verificado el catálogo completo, se realiza el *merge* hacia `main`.
 
 > *Nota:* La rama `develop` ya se encuentra publicada en el repositorio remoto. Las ramas individuales se crearán a partir de `develop` cuando cada integrante inicie el desarrollo de su componente.
@@ -121,9 +121,9 @@ main  (Versión estable y entregas oficiales)
 
 | Integrante | Rol y asignación en el proyecto | Estado |
 |---|---|---|
-| Averos Fonseca Liliana Elizabeth (@lilianaelizabethaveros-ui) | Preparación de la base inicial del proyecto (estructura de archivos, arquitectura base y documentación). Desarrollo de su componente individual en su rama de trabajo. | Base inicial completada |
+| Averos Fonseca Liliana Elizabeth (@lilianaelizabethaveros-ui) | Preparación de la base inicial del proyecto (estructura de archivos, arquitectura base y documentación). Desarrollo e integración de su componente individual. | Base inicial y componente completados |
 | Perrazo Guerra Camila Mayte (@CamilaPerrazo) | Desarrollo y verificación de su componente individual de producto en su respectiva rama de trabajo. | Pendiente de desarrollo en rama |
-| Pinos Cordero Rashell Estefany (@rashellpinos) | Desarrollo y verificación de su componente individual de producto en su respectiva rama de trabajo. | Pendiente de desarrollo en rama |
+| Pinos Cordero Rashell Estefany (@rashellpinos) | Desarrollo y verificación de su componente individual de producto en su respectiva rama de trabajo. | Componente implementado y verificado en rama `feature/rashell-pinos` |
 
 ---
 
@@ -132,3 +132,15 @@ main  (Versión estable y entregas oficiales)
 - **Herramientas consultadas:** Gemini y Claude.
 - **Propósito de la consulta:** Asistencia técnica para estructurar la documentación académica, organizar las secciones del proyecto y redactar con claridad la arquitectura de Web Components y el flujo colaborativo de Git.
 - **Verificación humana:** Todo el contenido, los nombres de las integrantes, la propuesta del emprendimiento y la configuración de archivos fueron revisados, adaptados y verificados por el equipo de estudiantes. Esta declaración se mantendrá actualizada conforme avance el desarrollo de los componentes individuales.
+
+---
+
+## 9. Seguimiento de los componentes individuales del equipo
+
+Esta sección permite realizar el seguimiento técnico del desarrollo e integración de los Web Components individuales asignados a cada integrante del equipo:
+
+| Integrante | Producto o componente | Archivo JavaScript | Rama de trabajo | Estado |
+|---|---|---|---|---|
+| Averos Fonseca Liliana Elizabeth (@lilianaelizabethaveros-ui) | Tostado Andino Crujiente con Sal Marina y Hierbas | `componentes/tarjeta-producto-lili.js` | `main` | Implementado e integrado en catálogo |
+| Perrazo Guerra Camila Mayte (@CamilaPerrazo) | *Pendiente de confirmación* | *Pendiente de confirmación* | *Pendiente de confirmación* | Pendiente de desarrollo en rama |
+| Pinos Cordero Rashell Estefany (@rashellpinos) | Infusión fría de Guayusa Orgánica con Limón | `componentes/tarjeta-producto-rashell-pinos.js` | `feature/rashell-pinos` | Implementado y verificado en rama individual |
