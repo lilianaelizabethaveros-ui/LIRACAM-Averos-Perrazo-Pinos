@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LIRACAM · Base Inicial del Proyecto</title>
+  <link rel="icon" href="data:,">
   <link rel="stylesheet" href="./estilos.css">
+  <script type="module" src="./componentes/tarjeta-producto-rashell-pinos.js"></script>
 </head>
 <body>
 
@@ -21,11 +23,14 @@
   <main class="contenedor-principal">
 
     <section class="tarjeta-informativa">
-      <h2>Catálogo de Productos (En preparación)</h2>
-      <p>
-        El catálogo y los componentes de producto se desarrollarán en sus respectivas ramas individuales
-        y se integrarán aquí una vez revisados y verificados.
-      </p>
+      <h2>Catálogo de Productos · Bebida</h2>
+      <div class="catalogo">
+        <tarjeta-producto precio="2.00" destacado>
+          <img slot="foto" src="./img/guayusa.jpg" alt="Infusión fría de Guayusa Orgánica con Limón">
+          <h3 slot="nombre">Infusión fría de Guayusa Orgánica con Limón</h3>
+          <p>La guayusa es una bebida ancestral ecuatoriana muy comercializada en tiendas saludables de Quito por sus propiedades energizantes naturales.</p>
+        </tarjeta-producto>
+      </div>
     </section>
   </main>
 
