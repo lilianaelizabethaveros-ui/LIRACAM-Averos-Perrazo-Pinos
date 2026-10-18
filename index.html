@@ -1,63 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LIRACAM · Base Inicial del Proyecto</title>
-  <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="./estilos.css">
-  <!-- Carga modular del componente web nativo desarrollado por Liliana Averos -->
-  <script type="module" src="./componentes/tarjeta-producto-lili.js"></script>
-  <!-- Carga modular del componente web nativo desarrollado por Rashell Pinos -->
-  <script type="module" src="./componentes/tarjeta-producto-rashell-pinos.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIRACAM - Snacks Saludables</title>
+    <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
-
-  <!-- Encabezado principal del proyecto -->
-  <header class="cabecera">
-    <h1>LIRACAM</h1>
-    <p class="cabecera-subtitulo">Proyecto Base · Web Components Nativos</p>
-    <p class="cabecera-descripcion">
-      Estructura colaborativa para el desarrollo de componentes web nativos de la práctica de laboratorio.
-    </p>
-  </header>
-
-  <!-- Contenedor principal de la base inicial -->
-  <main class="contenedor-principal">
-
-    <h2 class="seccion-titulo">Catálogo de Productos · LIRACAM</h2>
-
-    <section class="catalogo">
-
-      <!-- TARJETA 1 - Producto TOSTADO ANDINO CRUJIENTE de Liliana Averos -->
-      <tarjeta-producto precio="1.75">
-        <img slot="foto" src="./img/tostado-andino.jpeg" alt="Tostado Andino Crujiente con Sal Marina y Hierbas">
-        <h3 slot="nombre">Tostado Andino Crujiente con Sal Marina y Hierbas</h3>
-        <p>Maíz tostado tradicional de la serranía ecuatoriana, sazonado con sal marina y hierbas aromáticas finas. Snack 100% natural, crocante y nutritivo.</p>
-      </tarjeta-producto>
-
-      <!-- TARJETA 2 - Producto Infusión fría de Guayusa Orgánica con Limón de Rashell Pinos -->
-      <tarjeta-producto precio="2.00" destacado>
-        <img slot="foto" src="./img/guayusa.jpg" alt="Infusión fría de Guayusa Orgánica con Limón">
-        <h3 slot="nombre">Infusión fría de Guayusa Orgánica con Limón</h3>
-        <p>La guayusa es una bebida ancestral ecuatoriana muy comercializada en tiendas saludables de Quito por sus propiedades energizantes naturales.</p>
-      </tarjeta-producto>
-
-    </section>
-
-  </main>
-
-  <!-- Pie de página -->
-  <footer class="pie-pagina">
-    <p>
-      <strong>Asignatura:</strong> Programación Integrativa de Componentes Web · 
-      <strong>Unidad:</strong> Web Components · 
-      <strong>NRC:</strong> 36642
-    </p>
-    <p>
-      <strong>Equipo LIRACAM:</strong> Liliana Elizabeth Averos Fonseca · Camila Mayte Perrazo Guerra · Rashell Estefany Pinos Cordero
-    </p>
-  </footer>
-
+    <script type="module" src="./app.js"></script>
+    
+    <tarjeta-producto precio="2.50">
+        <img slot="foto" src="./img/galletas.png" alt="Galletas de quinua y cacao"/>
+        <h3 slot="nombre">Galletas de Quinua y Cacao</h3>
+        <p>Galletas artesanales horneadas, libres de gluten, elaboradas con harina de quinua andina y trozos de chocolate 70% fino de aroma.</p>
+    </tarjeta-producto>
+    
 </body>
 </html>
