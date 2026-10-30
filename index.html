@@ -1,19 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIRACAM - Snacks Saludables</title>
-    <link rel="stylesheet" href="./style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIRACAM · Snacks Saludables y Artesanales Andinos</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./style.css">
+  <!-- Carga modular directa del componente web nativo conforme al Paso 1-->
+  <script type="module" src="./componentes/tarjeta-producto.js"></script>
 </head>
 <body>
-    <script type="module" src="./app.js"></script>
-    
-    <tarjeta-producto precio="2.50">
-        <img slot="foto" src="./img/galletas.png" alt="Galletas de quinua y cacao"/>
-        <h3 slot="nombre">Galletas de Quinua y Cacao</h3>
-        <p>Galletas artesanales horneadas, libres de gluten, elaboradas con harina de quinua andina y trozos de chocolate 70% fino de aroma.</p>
-    </tarjeta-producto>
-    
+
+  <!-- Encabezado principal del proyecto -->
+  <header class="cabecera">
+    <h1>LIRACAM</h1>
+    <p class="cabecera-subtitulo">Snacks y Sabores Tradicionales de la Sierra Ecuatoriana</p>
+    <p class="cabecera-descripcion">
+      Tienda digital interactiva de repostería artesanal y bocaditos saludables elaborados con superalimentos andinos.
+    </p>
+  </header>
+
+  <!-- Contenedor principal del catálogo -->
+  <main class="contenedor-principal">
+
+    <h2 class="seccion-titulo">Catálogo de Productos · LIRACAM</h2>
+
+    <section class="catalogo">
+
+      <!-- TARJETA 1 - Producto de Liliana Averos -->
+      <tarjeta-producto precio="1.75">
+        <img slot="foto" src="./img/tostado-andino.jpeg" alt="Tostado Andino Crujiente sazonado con sal marina y hierbas">
+        <h3 slot="nombre">Tostado Andino Crujiente con Sal Marina y Hierbas</h3>
+        <p>Maíz tostado tradicional de la serranía ecuatoriana, sazonado con sal marina y hierbas aromáticas finas. Snack 100% natural, crocante y nutritivo.</p>
+      </tarjeta-producto>
+
+      <!-- TARJETA 2 - Producto de Rashell Pinos -->
+      <tarjeta-producto precio="2.00" destacado>
+        <img slot="foto" src="./img/guayusa.jpg" alt="Infusión fría de Guayusa Orgánica con Limón">
+        <h3 slot="nombre">Infusión Fría de Guayusa Orgánica con Limón</h3>
+        <p>Bebida ancestral andina-amazónica ecuatoriana, energizante natural y refrescante elaborada con hojas de guayusa orgánica y un toque cítrico.</p>
+      </tarjeta-producto>
+
+      <!-- TARJETA 3 - Producto de Camila Perrazo -->
+      <tarjeta-producto precio="2.50">
+        <img slot="foto" src="./img/galletas.png" alt="Galletas artesanales de quinua y cacao fino de aroma">
+        <h3 slot="nombre">Galletas de Quinua y Cacao Fino de Aroma</h3>
+        <p>Galletas artesanales horneadas, libres de gluten, elaboradas con harina de quinua andina y trozos de chocolate 70% fino de aroma ecuatoriano.</p>
+      </tarjeta-producto>
+
+    </section>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="pie-pagina">
+    <p>
+      <strong>Asignatura:</strong> Programación Integrativa de Componentes Web · 
+      <strong>Unidad:</strong> Web Components Nativos · 
+      <strong>NRC:</strong> 36642
+    </p>
+    <p>
+      <strong>Equipo LIRACAM:</strong> Liliana Elizabeth Averos Fonseca · Camila Mayte Perrazo Guerra · Rashell Estefany Pinos Cordero
+    </p>
+  </footer>
+
 </body>
 </html>

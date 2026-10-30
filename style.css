@@ -1,19 +1,129 @@
-* {
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/*  ESTILOS GLOBALES DE LA PÁGINA · PROYECTO LIRACAM
 
+/* Variables globales de color e identidad del emprendimiento */
 :root {
-  --color-marca: #3D8B4F;
+  --color-marca: #3D8B4F;         /* Verde fresco y natural de la marca */
+  --color-primario: #2F6B45;      /* Verde oscuro institucional */
+  --color-secundario: #E67E22;    /* Naranja apetitoso para precios y acciones */
+  --color-fondo: #F4F6F4;         /* Fondo limpio y natural */
+  --color-superficie: #FFFFFF;    /* Blanco para tarjetas y contenedores */
+  --color-texto: #2C3E50;         /* Gris antracita para textos principales */
+  --color-texto-suave: #5A6B7C;   /* Gris medio para descripciones y subtítulos */
+  --color-borde: #DDE5DF;         /* Borde sutil y neutro */
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 100vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #F4F6F4;
+/* Ajuste de caja universal */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Estructura base de la página */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  padding: 16px 20px;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Encabezado principal del emprendimiento */
+.cabecera {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto 16px auto;
+  text-align: center;
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-top: 4px solid var(--color-marca);
+  border-radius: 14px;
+  padding: 16px 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.cabecera h1 {
+  margin: 0 0 4px 0;
+  color: var(--color-marca);
+  font-size: 1.8rem;
+  letter-spacing: -0.01em;
+}
+
+.cabecera-subtitulo {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-texto);
+  margin: 0 0 6px 0;
+}
+
+.cabecera-descripcion {
+  font-size: 0.85rem;
+  color: var(--color-texto-suave);
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+/* Contenedor principal */
+.contenedor-principal {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Título de la sección del catálogo */
+.seccion-titulo {
+  font-size: 1.15rem;
+  color: var(--color-primario);
+  border-bottom: 2px solid var(--color-borde);
+  padding-bottom: 6px;
+  margin: 10px 0 16px 0;
+}
+
+/* Cuadrícula responsiva para el catálogo de productos */
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+/* Inyección de variables CSS hacia el componente <tarjeta-producto> */
+tarjeta-producto {
+  --color-marca: var(--color-marca, #3D8B4F);
+  --color-precio: var(--color-secundario, #E67E22);
+  --color-borde-tarjeta: var(--color-borde, #DDE5DF);
+  --color-btn-hover: #2E6B3C;
+}
+
+/* Pie de página institucional */
+.pie-pagina {
+  max-width: 1000px;
+  width: 100%;
+  margin: 16px auto 0 auto;
+  padding: 12px 20px;
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: 12px;
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--color-texto-suave);
+  line-height: 1.4;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.03);
+}
+
+.pie-pagina p {
+  margin: 3px 0;
 }
