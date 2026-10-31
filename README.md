@@ -107,10 +107,8 @@ A continuación se detallan los cinco registros técnicos exigidos por la rúbri
   1. `<slot name="foto">`: Ranura con nombre destinada a proyectar la imagen o fotografía del producto.
   2. `<slot name="nombre">`: Ranura con nombre destinada a proyectar el encabezado o denominación del producto.
   3. `<slot>` (slot por defecto / anónimo): Ranura encargada de proyectar la descripción textual del producto.
-- **Contenido de respaldo (*Fallback Content*):**
-  - Para el slot de foto: se implementó un elemento visual alternativo `<div class="foto-respaldo">🍃</div>` en caso de que no se proporcione imagen.
-  - Para el slot de nombre: texto por defecto `Producto Andino`.
-  - Para el slot por defecto de descripción: texto de respaldo `Sin descripción disponible para este producto.`. Si la página exterior omite el párrafo descriptivo, el componente muestra este respaldo de forma limpia.
+- **Texto de respaldo (*Fallback Content*):**  
+  Para el slot sin nombre (descripción), se definió el texto de respaldo `Sin descripción disponible para este producto.`. Si la página exterior no suministra un párrafo descriptivo, el componente mostrará automáticamente este texto por defecto.
 - **¿Qué pasaría si no se clonara la plantilla con `cloneNode(true)`?:**  
   El elemento `<template>` almacena su estructura interna en un `DocumentFragment`. Si en lugar de clonar dicho fragmento con `cloneNode(true)` se anexara directamente al Shadow DOM de un elemento, los nodos del fragmento serían consumidos (extraídos de su contenedor original en memoria). En consecuencia, **únicamente la primera tarjeta creada obtendría el DOM y los estilos**; la segunda y tercera tarjetas quedarían completamente vacías y rotas. El método `.cloneNode(true)` realiza una copia profunda e independiente de toda la estructura para cada instancia del componente en el catálogo.
 
